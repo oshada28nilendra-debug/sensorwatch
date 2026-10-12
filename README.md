@@ -108,8 +108,6 @@ npm run test:browser
 
 Tests cover timestamp/timezone validation, invalid/oversized inputs, grid gaps, flat-run boundaries/overlaps, warmup eligibility, constant references, deterministic model scores, exact metric calculations, label coverage, HTTP guards and CLI errors. Browser tests cover demo, chart, filtering, JSON contents, real uploads, unlabelled results, stale-result clearing and mobile overflow. GitHub Actions runs the Python suite, measured CLI demo and actual Chromium checks; inspect the PR for remote status. [Build record](docs/project-status.md).
 
-## Interview explanation
 
-“I built a sensor-log review tool that compares interpretable rules with an unsupervised model. I separated reference fitting from labelled evaluation, made missing-data handling explicit, and compared both methods on identical eligible readings. The model performed worse than the rules on my synthetic fixture, which I reported instead of assuming ML was better. The next step is validation on independently labelled real sensor logs, especially stable operating states and distribution drift.”
 
 Reference: [scikit-learn IsolationForest documentation](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html). Installed version is pinned to 1.8.0; reports record the actual version. No third-party datasets are redistributed.
